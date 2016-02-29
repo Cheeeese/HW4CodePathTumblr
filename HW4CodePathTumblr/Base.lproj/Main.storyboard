@@ -184,7 +184,7 @@
         <scene sceneID="1fv-nB-3c7">
             <objects>
                 <viewController storyboardIdentifier="ComposeViewController" id="5oR-zl-hIh" customClass="ComposeViewController" customModule="HW4CodePathTumblr" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="3fh-DA-5Ru">
+                    <view key="view" opaque="NO" alpha="0.5" contentMode="scaleToFill" id="3fh-DA-5Ru">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

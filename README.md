@@ -13,6 +13,6 @@ Completed user stories:
 * [x] Optional: Login button should show animate the login form over the view controller.
 * [x] Optional: Discover bubble should bob up and down unless the SearchViewController is tapped.
 
-![Video Walkthrough](HW4_withOptionals.gif)
+![Video Walkthrough](HW4_withAllOptionals.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).

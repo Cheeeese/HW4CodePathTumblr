@@ -10,8 +10,11 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet var contentView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        contentView.backgroundColor = UIColor(red: 0.20, green: 0.26, blue: 0.34, alpha: 0.9)
 
         // Do any additional setup after loading the view.
     }

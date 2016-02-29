@@ -10,6 +10,8 @@ import UIKit
 
 class ComposeViewController: UIViewController {
 
+    @IBOutlet var contentView: UIView!
+    
     @IBOutlet weak var textButton: UIButton!
     @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var quoteButton: UIButton!
@@ -49,6 +51,8 @@ class ComposeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        contentView.backgroundColor = UIColor(red: 0.20, green: 0.26, blue: 0.34, alpha: 0.9)
 
         // Do any additional setup after loading the view.
     }

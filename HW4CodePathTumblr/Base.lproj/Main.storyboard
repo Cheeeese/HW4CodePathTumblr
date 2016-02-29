@@ -129,7 +129,7 @@
         <scene sceneID="9ph-uI-4af">
             <objects>
                 <viewController id="zjo-gN-Gg3" customClass="LoginViewController" customModule="HW4CodePathTumblr" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="WH1-Mv-TFt">
+                    <view key="view" contentMode="scaleToFill" id="WH1-Mv-TFt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -144,9 +144,24 @@
                                     <action selector="didPressCancel:" destination="zjo-gN-Gg3" eventType="touchUpInside" id="pyQ-Os-cJ3"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" id="myy-01-tdW">
+                                <rect key="frame" x="20" y="179" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" id="JH7-Qi-Wfn">
+                                <rect key="frame" x="20" y="223" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.25882352941176467" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="contentView" destination="WH1-Mv-TFt" id="FHH-4E-2O3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMz-5G-vVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,7 +199,7 @@
         <scene sceneID="1fv-nB-3c7">
             <objects>
                 <viewController storyboardIdentifier="ComposeViewController" id="5oR-zl-hIh" customClass="ComposeViewController" customModule="HW4CodePathTumblr" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" opaque="NO" alpha="0.5" contentMode="scaleToFill" id="3fh-DA-5Ru">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="3fh-DA-5Ru">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -231,6 +246,7 @@
                     </view>
                     <connections>
                         <outlet property="chatButton" destination="DTo-4M-N28" id="gVe-vS-BeC"/>
+                        <outlet property="contentView" destination="3fh-DA-5Ru" id="vxy-PH-ZR0"/>
                         <outlet property="linkButton" destination="daZ-Wf-XKj" id="r0y-Wa-XGO"/>
                         <outlet property="photoButton" destination="8sl-Sy-vyc" id="Qhz-mD-8AW"/>
                         <outlet property="quoteButton" destination="oRP-Th-M6g" id="IuF-Zf-Uvn"/>
@@ -250,13 +266,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="account" id="ILF-ZS-ADs">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="JIg-yP-EWG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="account" id="ILF-ZS-ADs">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.25882352941176467" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="JIg-yP-EWG" id="2o9-78-cJg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OtH-QB-NlS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
